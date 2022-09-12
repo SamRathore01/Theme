@@ -15,19 +15,13 @@
   border-top: 2px solid rgba(0, 0, 0, 0.1);
 }
 .imgs {
-  width: 40vw;
-  display: block;
-  margin: auto;
-  inset: 0px;
-}
-.imgs {
-  width: 40vw;
+  width: 55vw;
   display: block;
   margin: auto;
   inset: 0px;
 }
 .imgs2 {
-  width: 40vw;
+  width: 80vw;
   display: block;
   margin: auto;
   inset: 0px;

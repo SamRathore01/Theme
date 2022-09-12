@@ -1,7 +1,7 @@
 import './App.css';
 import Data from './codetestjson.json';
 import logo from './assets/plus.svg'
-import images from './assets/imgg.jpeg'
+
 function App() {
   return (
    <div className='container p-2' >
@@ -21,22 +21,22 @@ function App() {
         <br/>
         <p>{Data.blocks[1].text}</p>  
         <br/>
-        <img className='imgs' src={Data.blocks[2].url}/>
+        <img className='imgs' src={Data.blocks[2].url} alt=""/>
         <span className='imgs' ><p>{Data.blocks[2].captionText}</p></span>
         <br/>
-        <p>Lorem Ipsum is that it has a more-or-less normal distribution of letters, <span className='name' >as opposed to using 'Content here, content here', </span> making it look like readable English. Many desktop publishing packages and<a href='#'> web page editors now use Lorem Ipsum  </a> as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>    
+        <p>Lorem Ipsum is that it has a more-or-less normal distribution of letters, <span className='name' >as opposed to using 'Content here, content here', </span> making it look like readable English. Many desktop publishing packages and<a href='google.com'> web page editors now use Lorem Ipsum  </a> as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>    
         <p className='' >{Data.blocks[3].text}</p>
         <br/>
         <p className='' >{Data.blocks[4].text}</p>
         <br/>
-        <div class="vl imgs2 ">
+        <div className="vl imgs ">
         <span className='p-1' >{Data.blocks[5].text}</span>
         <p className='py-0 m-1 name2 d-flex'> {Data.byline}</p>
         </div>
         <br/>
         <p className='' >{Data.blocks[6].text}</p><br/>
         <p className='' >{Data.blocks[7].text}</p><br/>
-        <ol className='imgs p-2'>
+        <ol className='imgs2 p-2'>
             <li className='p-2'>{Data.blocks[6].text}</li>
             <li className='p-2'>{Data.blocks[3].text}</li>
             <li className='p-2'>{Data.blocks[4].text}</li>
@@ -48,6 +48,6 @@ function App() {
    </div>
   );
 }
-console.log(Data);
+// console.log(Data);
 
 export default App;
